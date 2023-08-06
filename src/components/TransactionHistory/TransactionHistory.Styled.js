@@ -36,8 +36,18 @@ export const Line = styled.tr`
   height: 32px;
 `;
 
-export const Type = styled.td`
+export const TypeTdOne = styled.td`
   text-transform: capitalize;
+  &:hover {
+    background-color: #66aabb;
+    cursor: 'pointer';
+  }
+`;
+export const TypeTdTwoThree = styled.td`
+  &:hover {
+    background-color: #66aabb;
+    cursor: 'pointer';
+  }
 `;
 
 export const TypeThRight = styled.th`

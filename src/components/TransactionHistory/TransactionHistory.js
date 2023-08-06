@@ -3,9 +3,10 @@ import {
   Tbody,
   Thead,
   Line,
-  Type,
+  TypeTdOne,
   TypeThRight,
   TypeThLeft,
+  TypeTdTwoThree,
 } from './TransactionHistory.Styled';
 
 export const TransactionHistory = ({ items }) => {
@@ -22,9 +23,9 @@ export const TransactionHistory = ({ items }) => {
       <Tbody>
         {items.map(({ id, type, amount, currency }) => (
           <Line key={id}>
-            <Type>{type}</Type>
-            <td>{amount}</td>
-            <td>{currency}</td>
+            <TypeTdOne>{type}</TypeTdOne>
+            <TypeTdTwoThree>{amount}</TypeTdTwoThree>
+            <TypeTdTwoThree>{currency}</TypeTdTwoThree>
           </Line>
         ))}
       </Tbody>
