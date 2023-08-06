@@ -39,8 +39,6 @@ export const ListItem = styled.li`
         return '#446688';
       case '.psd':
         return '#559988';
-      case '.pdf':
-        return '#669977';
       default:
         return '#226688';
     }
