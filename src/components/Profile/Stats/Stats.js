@@ -12,7 +12,7 @@ export const Status = ({
 }) => {
   return (
     <StatsList className="stats">
-      <StatsListItem li key={1}>
+      <StatsListItem key={1}>
         <Followers followers={followers} />
       </StatsListItem>
       <StatsListItemViews key={2}>
