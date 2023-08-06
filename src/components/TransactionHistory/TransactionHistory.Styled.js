@@ -4,7 +4,8 @@ export const Table = styled.table`
   background-color: #226688;
   margin: auto;
   width: 360px;
-  border-radius: 5px;
+  border-radius: 8px;
+  margin-bottom: 40px;
 `;
 
 export const Thead = styled.thead`
