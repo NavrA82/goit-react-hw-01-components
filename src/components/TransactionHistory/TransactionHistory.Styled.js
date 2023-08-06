@@ -24,9 +24,11 @@ export const Tbody = styled.tbody`
   tr:nth-child(odd) {
     background-color: #337788;
   }
-  tr:last-child {
-    border-bottom-right-radius: 8px;
+  tr:last-of-type td:first-child {
     border-bottom-left-radius: 8px;
+  }
+  tr:last-of-type td:last-child {
+    border-bottom-right-radius: 8px;
   }
 `;
 
@@ -37,9 +39,11 @@ export const Line = styled.tr`
 export const Type = styled.td`
   text-transform: capitalize;
 `;
+
 export const TypeThRight = styled.th`
   border-top-right-radius: 8px;
 `;
+
 export const TypeThLeft = styled.th`
   border-top-left-radius: 8px;
 `;
