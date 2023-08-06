@@ -32,3 +32,9 @@ export const Line = styled.tr`
 export const Type = styled.td`
   text-transform: capitalize;
 `;
+export const TypeThRight = styled.th`
+  border-top-right-radius: 8px;
+`;
+export const TypeThLeft = styled.th`
+  border-top-left-radius: 8px;
+`;
