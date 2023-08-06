@@ -24,11 +24,14 @@ export const Tbody = styled.tbody`
   tr:nth-child(odd) {
     background-color: #337788;
   }
+  tr:last-child {
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
 `;
 
 export const Line = styled.tr`
-  height: 30px;
-  font-size: 14px;
+  height: 32px;
 `;
 
 export const Type = styled.td`
