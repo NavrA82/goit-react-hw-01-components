@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const WrapperCard = styled.div`
-  width: 520px;
+  max-width: 520px;
   padding: 80px;
   background-color: #556633;
   margin: auto;

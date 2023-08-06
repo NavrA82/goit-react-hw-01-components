@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const WrapperDescImageProfile = styled.div`
-  width: 360px;
+  max-width: 360px;
   background-color: #119966;
   display: flex;
   flex-direction: column;

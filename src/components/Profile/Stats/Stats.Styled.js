@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StatsList = styled.ul`
-  width: 360px;
+  max-width: 360px;
   background-color: #229988;
   display: flex;
   margin: 0 auto;
@@ -18,7 +18,7 @@ export const StatsListItem = styled.li`
   margin: 0 auto;
   padding: 20px 0;
   row-gap: 4px;
-  min-width: 120px;
+  max-width: 120px;
 `;
 export const StatsListItemViews = styled.li`
   display: flex;
