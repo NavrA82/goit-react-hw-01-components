@@ -23,7 +23,7 @@ export const Tbody = styled.tbody`
   }
 `;
 
-export const TrLine = styled.tr`
+export const Line = styled.tr`
   height: 30px;
   font-size: 14px;
 `;

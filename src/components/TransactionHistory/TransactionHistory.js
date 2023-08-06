@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Table, Tbody, Thead, TrLine, Type } from './TransactionHistory.Styled';
+import { Table, Tbody, Thead, Line, Type } from './TransactionHistory.Styled';
 
 export const TransactionHistory = ({ items }) => {
   return (
@@ -14,11 +14,11 @@ export const TransactionHistory = ({ items }) => {
 
       <Tbody>
         {items.map(({ id, type, amount, currency }) => (
-          <TrLine key={id}>
+          <Line key={id}>
             <Type>{type}</Type>
             <td>{amount}</td>
             <td>{currency}</td>
-          </TrLine>
+          </Line>
         ))}
       </Tbody>
     </Table>
