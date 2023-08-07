@@ -12,13 +12,13 @@ export const Status = ({
 }) => {
   return (
     <StatsList className="stats">
-      <StatsListItem key={1}>
+      <StatsListItem key={followers}>
         <Followers followers={followers} />
       </StatsListItem>
-      <StatsListItemViews key={2}>
+      <StatsListItemViews key={views}>
         <Views views={views} />
       </StatsListItemViews>
-      <StatsListItem key={3}>
+      <StatsListItem key={likes}>
         <Likes likes={likes} />
       </StatsListItem>
     </StatsList>

@@ -5,12 +5,14 @@ export const GlobalStyle = createGlobalStyle`
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #11551177;
+  line-height: 1.5;
 
 }
 a {
   text-decoration: none;
 }
-ul {
+ul,
+ol {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -24,4 +26,9 @@ h6,
 p {
   margin: 0;
   padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }`;
