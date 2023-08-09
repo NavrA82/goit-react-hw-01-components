@@ -8,7 +8,6 @@ import {
 } from './FriendListItem.styled';
 
 export const FriendListItem = ({ status, avatar, name }) => {
-  console.log(status);
   return (
     <ListItem>
       <ListItemOnLine
