@@ -30,3 +30,13 @@ export const StatsListItemViews = styled.li`
   border-right: 2px solid #11111166;
   border-left: 2px solid #11111166;
 `;
+export const UserNameStats = styled.span`
+  text-align: center;
+  color: #11111199;
+`;
+
+export const UserStats = styled.span`
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+`;

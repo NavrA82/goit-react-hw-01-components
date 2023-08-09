@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import {
   WrapperStats,
   TitleStats,
@@ -7,18 +9,17 @@ import {
   StatPercentage,
 } from './Statistics.Styled';
 
-export const Statistics = ({ stats }) => {
+export const Statistics = ({ data, title }) => {
   return (
     <WrapperStats>
-      <TitleStats className="title">Upload stats</TitleStats>
-
+      {title && <TitleStats>{title}</TitleStats>}
       <List className="stat-list">
-        {stats.map(stat => {
+        {data.map(({ id, label, percentage }) => {
           return (
-            <ListItem key={stat.id} label={stat.label} className="item">
-              <StatName className="label">{stat.label}</StatName>
+            <ListItem key={id} label={label} className="item">
+              <StatName className="label">{label}</StatName>
               <StatPercentage className="percentage">
-                {stat.percentage}%
+                {percentage}%
               </StatPercentage>
             </ListItem>
           );
@@ -26,4 +27,15 @@ export const Statistics = ({ stats }) => {
       </List>
     </WrapperStats>
   );
+};
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  data: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ).isRequired,
 };

@@ -1,15 +1,13 @@
+import PropTypes from 'prop-types';
+
 import {
   ImageProfile,
   WrapperDescImageProfile,
   TitleProfile,
   TagLocationProfile,
-} from './Description.styled';
+} from './ProfileDescription.styled';
 
-export const Description = ({
-  profileCard: {
-    card: { username, tag, location, avatar },
-  },
-}) => {
+export const Description = ({ username, tag, location, avatar }) => {
   return (
     <WrapperDescImageProfile>
       <ImageProfile src={avatar} alt="User avatar" className="avatar" />
@@ -18,4 +16,10 @@ export const Description = ({
       <TagLocationProfile className="location">{location}</TagLocationProfile>
     </WrapperDescImageProfile>
   );
+};
+Description.propTypes = {
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
 };
